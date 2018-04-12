@@ -1,0 +1,9 @@
+<div class="col-md-6 col-md-offset-2">
+  <h1>Register</h1>
+  <h5>Insert code</h5><br>
+  <input class="reg-input" type="text" value="Type here" onfocus="this.value = '';"  required=""><br><br>
+  <button (click)="checkNetwork()">Submit</button>
+  <br>
+  <div *ngIf="this.network">You are now regiestered</div>
+  <div *ngIf="this.network===false">You are not on the same wifi</div>
+</div>
